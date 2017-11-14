@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* HEADER GRID PLACEMENT */
+
+.tl {
+  grid-area: top-left;
+  justify-self: end;
+  align-self: end;
+}
+.tr {
+  grid-area: top-right;
+  justify-self: start;
+  align-self: end;
+}
+.bl {
+  grid-area: bottom-left;
+  justify-self: end;
+  align-self: start;
+}
+.br {
+  grid-area: bottom-right;
+  justify-self: start;
+  align-self: start;
+}
+
+/***************
+   FONTs / TYPOGRAPHY STYLES
+*****************/
+
+a {
+  text-decoration: none;
+}
+
+h1, h3 {
+  font-weight: 100;
+}
+
+h1,h2,h3,p {
+  color:#8F8E94;
+  font-family: 'Raleway', sans-serif;  
+}
+.secondary {
+  color: #50E3C2;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  line-height: 10vh;
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+}
+
+/* CUSTOM PLACEMENT FOR ANIMATION */
+
+.section-title-top-left {
+  grid-area:2/2;  
+}
