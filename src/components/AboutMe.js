@@ -16,7 +16,7 @@ const Container = styled.section`
     height: 550px;
   }
   @media screen and (min-width: 980px) { /* intermediate screens */
-    height: 820px;
+    height: 1220px;
   }
 
   /** background image - color */
@@ -35,7 +35,9 @@ const Container = styled.section`
     grid-template-columns: 400px .9fr 1fr 1fr .9fr 400px;
     grid-template-rows: 100px 1fr 1.75fr 1.75fr 1.75fr 1fr 100px;   
 
-    background: url(${banner}); 
+    background: url(${banner});
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 
@@ -131,8 +133,10 @@ const P2 = styled.p` /* second paragraph on mobile / last on desktop */
   grid-row: 4 / 5;
 }
 @media screen and (min-width: 980px) {
-  font-size: 24px;
-  font-weight: 100;
+  color: darkslategrey;
+
+  font-size: 26px;
+  font-weight: 300;
 
   grid-column: 3 / 6;
   grid-row: 6 / 7;

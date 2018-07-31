@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import banner from '../img/giphy.gif';
 
@@ -21,12 +21,11 @@ const Container = styled.header`
     height: 100vh;
   }
 
-
-
   /** background image - color */
   background-image: url('${banner}');
   background-size: cover;
   background-repeat: no-repeat;
+
   /* CSS grid layout props */
   display: grid;
   grid-template-columns: 50px 1fr 1fr 50px;
@@ -75,19 +74,13 @@ const H2 = styled.h2`
   z-index: 4;
 `
 
-export default class Header extends React.Component {
-  render() {
-    return(
-      <div>
-        <Container>
-          <H1 className="tl secondary animated fadeInLeft">Thomas</H1>
-          <H1 className="tr animated fadeInRight">Faller</H1>
-          <H2 className="bl animated fadeInLeft">Front end</H2>
-          <H2 className="br secondary animated fadeInRight">developer</H2>
+const Header = () =>
+  <Container>
+    <H1 className="tl secondary animated fadeInLeft">Thomas</H1>
+    <H1 className="tr animated fadeInRight"> Faller</H1>
+    <H2 className="bl animated fadeInLeft">Full stack</H2>
+    <H2 className="br secondary animated fadeInRight"> developer</H2>
+    <Overlay></Overlay>
+  </Container>;
 
-          <Overlay></Overlay>
-        </Container>
-      </div>
-    )
-  }
-}
+export default Header;
